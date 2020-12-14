@@ -1,4 +1,4 @@
-ault server -dev -dev-root-token-id="root"&
+vault server -dev -dev-root-token-id="root"&
 
 sleep 2
 
