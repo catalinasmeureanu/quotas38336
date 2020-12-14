@@ -12,7 +12,7 @@ terraform apply -auto-approve
 
 vault namespace create education
 
-vault write sys/quotas/rate-limit/quota-dev  rate=5000 path=education/
+vault write sys/quotas/rate-limit/quota-dev rate=5000 path=education/
 
 vault write sys/quotas/rate-limit/quota-dev rate=5000 path=dev/
 
