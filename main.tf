@@ -12,6 +12,10 @@ resource "vault_namespace" "dev" {
   path = "dev"
 }
 
+resource "vault_namespace" "test" {
+  path = "test"
+}
+
 resource "vault_quota_rate_limit" "dev" {
   name = "quota-dev"
   path = "${vault_namespace.dev.path}/"
